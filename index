@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>K & T Transport Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>K & T Transport Services</h1>
+            <p>Reliable School Transport and Uber Services</p>
+            <nav>
+                <ul>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-box">
+                    <h3>School Transportation</h3>
+                    <p>We provide safe and reliable transportation for learners to and from school for only R1500 per month per learner. Our vehicles are well-maintained and equipped with fleet management tracking systems.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Uber Services</h3>
+                    <p>During the day, we operate as Uber vehicles, ensuring additional income and flexible availability. Our 7-seater Toyota Rumion fleet guarantees comfort and convenience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>K & T Transport Services is dedicated to providing reliable and affordable transport solutions for learners. Our team of experienced drivers and modern fleet ensures the safety and comfort of our passengers.</p>
+                <p>We pride ourselves on punctuality, safety, and providing excellent customer service.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have any questions or need more information? Get in touch with us!</p>
+                <form id="contact-form" onsubmit="submitForm(event)">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 K & T Transport Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for form submission -->
+    <script src="script.js"></script>
+</body>
+</html>
