@@ -9,7 +9,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #006699; /* Dark blue background */
+    background-color: #004080; /* Dark blue background */
     color: white;              /* White text color for readability */
     padding: 20px;
     text-align: center;
@@ -22,13 +22,13 @@ header {
 }
 
 .logo {
-    max-width: 200px;           /* Ensure logo is visible but not too large */
+    max-width: 500px;           /* Ensure logo is visible but not too large */
     height: auto;
 }
 
 /* Navigation Styling */
 nav {
-    background-color: #005580;
+    background-color: #003366; /* Darker blue for navigation */
     padding: 10px;
     text-align: center;
 }
@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffdd57;
+    color: #ffdd57; /* Yellow hover effect for contrast */
 }
 
 /* Container and Section Styling */
@@ -49,6 +49,69 @@ nav a:hover {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #e0f7fa; /* Light blue background for contrast */
+    background-color: #004080; /* Dark blue background for sections */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;              /* White text for better contrast */
+}
+
+/* General Text Styling */
+h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cce6ff; /* Lighter text color for header description */
+    font-size: 1.2rem;
+}
+
+/* Section Titles */
+h2 {
+    color: #ffdd57; /* Yellow section titles for emphasis */
+}
+
+/* Values Section */
+ul.values li {
+    background-color: #003366; /* Darker blue background for values list */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #00264d; /* Darkest blue for footer */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* Form Styles */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ffdd57;  /* Yellow button color */
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366;  /* Dark blue hover for button */
+    color: white;
+}
+
    
 
