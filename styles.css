@@ -39,6 +39,60 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* Style for logo */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* General styling for the header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f8ff; /* Light blue to evoke trust and safety */
+}
+
+header h1 {
+    color: #004080; /* Darker blue for professionalism */
+    font-size: 2.5rem;
+}
+
+header p {
+    color: #004080;
+    font-size: 1.2rem;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #004080;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* About section */
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #333;
+}
+
 
 /* Section Styles */
 h2 {
