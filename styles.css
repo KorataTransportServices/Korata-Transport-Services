@@ -7,13 +7,26 @@ body {
     padding: 0;
 }
 
+/* Header Styling */
 header {
-    background-color: #006699;
-    color: blue;
+    background-color: #006699; /* Dark blue background */
+    color: white;              /* White text color for readability */
     padding: 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 200px;           /* Ensure logo is visible but not too large */
+    height: auto;
+}
+
+/* Navigation Styling */
 nav {
     background-color: #005580;
     padding: 10px;
@@ -31,113 +44,11 @@ nav a:hover {
     color: #ffdd57;
 }
 
+/* Container and Section Styling */
 .container {
-    max-width: 200px;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background-color: blue;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-/* Style for logo */
-.logo-container {
-    text-align: center;
-    margin-bottom: 20px;
-}
+    background-color: #e0f7fa; /* Light blue background for contrast */
+   
 
-.logo {
-    max-width: 200px;
-    height: auto;
-}
-
-/* General styling for the header */
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #f0f8ff; /* Light blue to evoke trust and safety */
-}
-
-header h1 {
-    color: #004080; /* Darker blue for professionalism */
-    font-size: 2.5rem;
-}
-
-header p {
-    color: #004080;
-    font-size: 1.2rem;
-}
-
-/* Navigation styling */
-nav {
-    background-color: #004080;
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1rem;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* About section */
-.container {
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    color: #333;
-}
-
-
-/* Section Styles */
-h2 {
-    color: #005580;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-ul.values li {
-    background-color: #e0f7fa;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #006699;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
-}
-
-/* Form Styles */
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #005580;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #ffdd57;
-    color: #333;
-}
