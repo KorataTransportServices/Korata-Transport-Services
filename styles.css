@@ -22,7 +22,7 @@ header {
 }
 
 .logo {
-    max-width: 500px;           /* Ensure logo is visible but not too large */
+    max-width: 1000px;           /* Ensure logo is visible but not too large */
     height: auto;
 }
 
