@@ -26,13 +26,18 @@ flowchart TD
     P -- Yes --> Q[Go pickup the learner in time and drop the learner at home]
     P -- No --> R[Continue accepting trips]
     Q -->  R[Continue accepting trips]
-    N --> O[Driver picks up restaurant workers]
-    O --> P[Drivers drop workers at their homes]
-    P --> Q[Drivers may continue accepting trips until 10 PM]
-    Q --> R[Driver returns the car to parking area]
-    R --> S[Lead driver takes workers to their homes]
-    S --> T[Lead driver returns the car and requests transport to go home]
-    T --> U[Lead driver submits report on drivers and vehicle condition every 2 weeks]
+    R --> S{Driver has an arrangement with restaurant workers?}
+    S -- No --> T[Continue accepting trips]
+    S -- Yes --> U[Go to pickup workers and drop them at their homes]
+    U --> T[Continue accepting trips]
+    T --> V{Drivers may continue accepting trips until 10 PM. Done for the day ?}
+    V -- Yes --> W[Driver returns the car to parking area]
+    V -- No --> X[Contact lead driver to make arrangements]
+    X --> AB [Continues accepting trips and stops at 11pm]
+    AB --> W[Driver returns the car to parking area]
+    W --> Y[Lead driver takes worker(s) to their homes]
+    Y --> Z[Lead driver returns the car and requests transport to go home]
+    Z --> AA[Lead driver submits report on drivers and vehicle condition every 2 weeks]
 
     %% Cash Payment Process %%
     cash1[Driver accepts a trip with cash payment] --> cash2[Driver receives cash]
