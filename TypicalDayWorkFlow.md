@@ -1,5 +1,6 @@
 # Korata Transport Services Process Flow
-# Business Process Flow
+
+# Combined Business Process Flow
 
 ```mermaid
 graph TD
@@ -25,15 +26,12 @@ graph TD
     T --> U[Lead driver takes workers home]
     U --> V[Lead driver returns car and requests a ride home]
     V --> W[Lead driver sends bi-weekly report on drivers and car conditions]
-
-graph TD
-    A[Driver accepts a cash trip] --> B[Driver completes trip]
-    B --> C[Deposit cash within 2 hours]
-
-graph TD
-    A[Lead driver manages petrol account] --> B[Driver requests refill]
-    B --> C[Driver sends receipt to lead driver]
-    C --> D[Lead driver transfers money via e-wallet]
-    D --> E[Driver pays for petrol refill]
-    E --> F[Lead driver sends proof to company email]
-
+    W --> X[Driver accepts a cash trip]
+    X --> Y[Driver completes trip]
+    Y --> Z[Deposit cash within 2 hours]
+    Z --> AA[Lead driver manages petrol account]
+    AA --> AB[Driver requests refill]
+    AB --> AC[Driver sends receipt to lead driver]
+    AC --> AD[Lead driver transfers money via e-wallet]
+    AD --> AE[Driver pays for petrol refill]
+    AE --> AF[Lead driver sends proof to company email]
