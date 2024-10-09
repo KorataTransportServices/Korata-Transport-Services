@@ -19,7 +19,6 @@ flowchart TD
     K --> L{Learner has extracurricular activities?}
     L -- NO --> M[ Drivers Picks up and drop the kids at home]
     L -- Yes --> N[Arrange pick-up time with parents]
-    L --> M[Drop kids after activities]
     N --> O[Driver resumes Uber trips]
     M --> O[Driver resumes Uber trips]
     O --> P{Made an arrangement to pickup a learner with extracular activities?}
