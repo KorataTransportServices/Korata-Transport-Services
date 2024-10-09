@@ -10,21 +10,28 @@ flowchart TD
     C --> D[Driver starts accepting Uber trips]
     D --> E{Passenger enters the vehicle}
     E --> F[Driver introduces himself and provides employment details]
-    E --> G[Rider leaves item]
-    G --> H[Item taken to head office]
-    D --> I[Close to school knock-off, drivers go to their respective schools]
-    I --> J[Drivers drop the kids at home]
-    J --> K{Learner has extracurricular activities?}
-    K --> L[Arrange pick-up time with parents]
+    F --> G[Trip ends]
+    G --> H{Rider left item?}
+    H -- Yes --> I[Item taken to head office]
+    H -- No --> J[Driver continues trips]
+    I --> J[Driver continues trips]
+    J --> K[Close to school knock-off, drivers go to their respective schools]
+    K --> L{Learner has extracurricular activities?}
+    L -- NO --> M[ Drivers Picks up and drop the kids at home]
+    L -- Yes --> N[Arrange pick-up time with parents]
     L --> M[Drop kids after activities]
-    K --> M
-    M --> N[Driver resumes Uber trips]
+    N --> O[Driver resumes Uber trips]
+    M --> O[Driver resumes Uber trips]
+    O --> P{Made an arrangement to pickup a learner with extracular activities?}
+    P -- Yes --> Q[Go pickup the learner in time and drop the learner at home]
+    P -- No --> R[Continue accepting trips]
+    Q -->  R[Continue accepting trips]
     N --> O[Driver picks up restaurant workers]
     O --> P[Drivers drop workers at their homes]
     P --> Q[Drivers may continue accepting trips until 10 PM]
     Q --> R[Driver returns the car to parking area]
     R --> S[Lead driver takes workers to their homes]
-    S --> T[Lead driver returns the car and requests transport home]
+    S --> T[Lead driver returns the car and requests transport to go home]
     T --> U[Lead driver submits report on drivers and vehicle condition every 2 weeks]
 
     %% Cash Payment Process %%
