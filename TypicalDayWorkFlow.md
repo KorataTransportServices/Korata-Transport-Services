@@ -33,7 +33,7 @@ flowchart TD
     T --> V{Drivers may continue accepting trips until 10 PM. Done for the day ?}
     V -- Yes --> W[Driver returns the car to parking area]
     V -- No --> X[Contact lead driver to make arrangements]
-    X --> AB [Continues accepting trips and stops at 11pm]
+    X --> AB[Continues accepting trips and stops at 11pm]
     AB --> W[Driver returns the car to parking area]
     W --> Y[Lead driver takes worker(s) to their homes]
     Y --> Z[Lead driver returns the car and requests transport to go home]
